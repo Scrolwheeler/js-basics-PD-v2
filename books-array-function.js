@@ -2,7 +2,12 @@ let books = [
     {title: "Harijs potters", author: "Dž. K. Roulinga", isAvailable: "Jā"},
     {title: "Sprīdītis", author: "Anna Brigadere", isAvailable: "Nē"}
 ]
-// 2 vieta liku books.lenght tas nestrādāja
+
+function printBookInfo(attribute){
 for(let i = 0; i < 2; i++){
-   console.log("nosaukums: " + books[i].title + " " + "vai tā ir pieejama? " + books[i].isAvailable); 
+   console.log(attribute); 
 }
+}
+
+printBookInfo(books[i].title);
+printBookInfo(books[i].author);
